@@ -1,0 +1,49 @@
+// WehttamSnaps Color Scheme
+// Violet to Cyan gradient theme with Material Design 3 integration
+
+// Primary brand colors
+colors {
+    // WehttamSnaps brand gradient
+    primary "#8A2BE2"           // Violet
+    primary-variant "#9D4EDD"   // Lighter violet
+    secondary "#00FFFF"         // Cyan
+    secondary-variant "#00CED1" // Dark cyan
+    
+    // Accent colors
+    accent "#0066CC"            // Deep blue
+    accent-variant "#FF69B4"    // Hot pink
+    
+    // Surface colors
+    surface "#1E1E2E"           // Dark surface
+    surface-variant "#2A2A3E"   // Slightly lighter surface
+    background "#181825"        // Darker background
+    
+    // Text colors
+    on-primary "#FFFFFF"        // White text on primary
+    on-secondary "#000000"      // Black text on secondary
+    on-surface "#E0E0E0"        // Light gray text
+    on-background "#FFFFFF"     // White text on background
+    
+    // Border and outline
+    outline "#8A2BE2"           // Violet outline
+    outline-variant "#0066CC"   // Blue outline variant
+    
+    // Error colors
+    error "#FF5555"
+    on-error "#FFFFFF"
+    
+    // Success colors
+    success "#50FA7B"
+    on-success "#000000"
+    
+    // Warning colors
+    warning "#FFB86C"
+    on-warning "#000000"
+}
+
+// Apply colors to Niri elements
+theme {
+    border-active-color "#8A2BE2"
+    border-inactive-color "#0066CC"
+    focus-ring-color "#8A2BE2"
+}

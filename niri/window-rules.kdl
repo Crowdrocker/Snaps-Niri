@@ -1,0 +1,204 @@
+// WehttamSnaps Window Rules Configuration
+// Application-specific window behavior
+
+window-rule {
+    // ==================== GAMING APPLICATIONS ====================
+    
+    // Steam
+    match app-id="^steam$" {
+        default-column-width { proportion 0.8; }
+        open-on-workspace 3
+    }
+    
+    // Steam games (fullscreen)
+    match app-id="^steam_app_.*$" {
+        open-fullscreen true
+        open-on-workspace 3
+    }
+    
+    // Lutris
+    match app-id="^lutris$" {
+        default-column-width { proportion 0.7; }
+        open-on-workspace 3
+    }
+    
+    // Heroic Games Launcher
+    match app-id="^heroic$" {
+        default-column-width { proportion 0.8; }
+        open-on-workspace 3
+    }
+    
+    // Discord
+    match app-id="^discord$" {
+        default-column-width { proportion 0.3; }
+        open-on-workspace 4
+    }
+    
+    // Spotify
+    match app-id="^spotify$" {
+        default-column-width { proportion 0.5; }
+        open-on-workspace 9
+    }
+    
+    // ==================== STREAMING APPLICATIONS ====================
+    
+    // OBS Studio
+    match app-id="^com.obsproject.Studio$" {
+        default-column-width { proportion 0.8; }
+        open-on-workspace 5
+    }
+    
+    // ==================== WORK APPLICATIONS ====================
+    
+    // GIMP
+    match app-id="^gimp.*$" {
+        default-column-width { proportion 0.8; }
+        open-on-workspace 6
+    }
+    
+    // Inkscape
+    match app-id="^org.inkscape.Inkscape$" {
+        default-column-width { proportion 0.8; }
+        open-on-workspace 6
+    }
+    
+    // Krita
+    match app-id="^krita$" {
+        default-column-width { proportion 0.8; }
+        open-on-workspace 6
+    }
+    
+    // Blender
+    match app-id="^blender$" {
+        default-column-width { proportion 0.9; }
+        open-on-workspace 7
+    }
+    
+    // ==================== BROWSERS ====================
+    
+    // Firefox
+    match app-id="^firefox$" {
+        default-column-width { proportion 0.7; }
+        open-on-workspace 2
+    }
+    
+    // Chrome/Chromium
+    match app-id="^chromium.*$" {
+        default-column-width { proportion 0.7; }
+        open-on-workspace 2
+    }
+    
+    // ==================== COMMUNICATION ====================
+    
+    // Thunderbird
+    match app-id="^thunderbird$" {
+        default-column-width { proportion 0.6; }
+        open-on-workspace 8
+    }
+    
+    // Slack
+    match app-id="^slack$" {
+        default-column-width { proportion 0.4; }
+        open-on-workspace 8
+    }
+    
+    // ==================== UTILITIES ====================
+    
+    // File manager (Thunar)
+    match app-id="^thunar$" {
+        default-column-width { proportion 0.5; }
+    }
+    
+    // Terminal (Kitty)
+    match app-id="^kitty$" {
+        default-column-width { proportion 0.5; }
+    }
+    
+    // System monitor
+    match app-id="^btop$" {
+        default-column-width { proportion 0.6; }
+    }
+    
+    match app-id="^htop$" {
+        default-column-width { proportion 0.6; }
+    }
+    
+    // ==================== FLOATING WINDOWS ====================
+    
+    // Pavucontrol (audio control)
+    match app-id="^pavucontrol$" {
+        open-floating true
+        default-column-width { fixed 800; }
+    }
+    
+    // qpwgraph (audio routing)
+    match app-id="^qpwgraph$" {
+        open-floating true
+        default-column-width { fixed 1000; }
+    }
+    
+    // Calculator
+    match app-id="^gnome-calculator$" {
+        open-floating true
+        default-column-width { fixed 400; }
+    }
+    
+    // Color picker
+    match app-id="^gcolor3$" {
+        open-floating true
+        default-column-width { fixed 300; }
+    }
+    
+    // ==================== DIALOG WINDOWS ====================
+    
+    // File chooser dialogs
+    match title="^Open File$" {
+        open-floating true
+    }
+    
+    match title="^Save File$" {
+        open-floating true
+    }
+    
+    // Preferences/Settings dialogs
+    match title=".*[Pp]references.*" {
+        open-floating true
+    }
+    
+    match title=".*[Ss]ettings.*" {
+        open-floating true
+    }
+    
+    // ==================== GAME-SPECIFIC RULES ====================
+    
+    // Cyberpunk 2077
+    match title="^Cyberpunk 2077$" {
+        open-fullscreen true
+        open-on-workspace 3
+    }
+    
+    // The Division 2
+    match title="^Tom Clancy's The Division 2$" {
+        open-fullscreen true
+        open-on-workspace 3
+    }
+    
+    // Fallout 4
+    match title="^Fallout4$" {
+        open-fullscreen true
+        open-on-workspace 3
+    }
+    
+    // ==================== SPECIAL WINDOWS ====================
+    
+    // Picture-in-Picture
+    match title="^Picture-in-Picture$" {
+        open-floating true
+        default-column-width { fixed 640; }
+    }
+    
+    // Notification popups
+    match app-id="^dunst$" {
+        open-floating true
+    }
+}

@@ -1,0 +1,38 @@
+// WehttamSnaps Workspace Configuration
+// Organized workspaces for different activities
+
+workspace "1" {
+    // General/Default workspace
+}
+
+workspace "2" {
+    // Web browsing
+}
+
+workspace "3" {
+    // Gaming
+}
+
+workspace "4" {
+    // Communication (Discord, etc.)
+}
+
+workspace "5" {
+    // Streaming (OBS)
+}
+
+workspace "6" {
+    // Creative work (GIMP, Inkscape, Krita)
+}
+
+workspace "7" {
+    // 3D work (Blender)
+}
+
+workspace "8" {
+    // Email & messaging
+}
+
+workspace "9" {
+    // Music (Spotify)
+}

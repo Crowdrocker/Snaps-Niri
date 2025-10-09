@@ -1,0 +1,40 @@
+// WehttamSnaps Window Decorations
+// Modern, minimal window styling
+
+decorations {
+    // Border configuration
+    border {
+        width 2
+        radius 8
+        
+        active {
+            color "#8A2BE2"
+            gradient {
+                from "#8A2BE2"
+                to "#00FFFF"
+                angle 45
+            }
+        }
+        
+        inactive {
+            color "#0066CC"
+        }
+    }
+    
+    // Focus ring
+    focus-ring {
+        width 2
+        offset 2
+        color "#8A2BE2"
+    }
+    
+    // Shadows
+    shadow {
+        enabled true
+        blur-radius 20
+        spread-radius -5
+        offset-x 0
+        offset-y 4
+        color "rgba(138, 43, 226, 0.3)"
+    }
+}
